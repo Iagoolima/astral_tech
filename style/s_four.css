@@ -1,0 +1,133 @@
+#s_four{
+    display:flex ;
+    flex-direction: column;
+    
+    width: 100%;
+    background-color:#4a48d1;
+    
+    
+}
+.box_title_s_four{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.box_title_s_four p {
+    font-family:  'Changa', sans-serif;
+    font-size: 1.3em;
+    color: var(--two);
+}
+
+.box_title_s_four h1 {
+    font-size: 2em;
+    font-family:  'Changa', sans-serif;
+    color: white;
+}
+
+
+.container_content_s_four{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+
+.box_content_s_four{
+    height: 10rem;
+    width: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+    transition: 1s;
+}
+
+.box_content_s_four a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_size{
+    width: auto;
+    height: 100%;
+}
+
+.box_content_s_four:hover{
+    transform: scale(1.05);
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px silver; 
+    transition: 1s;
+    z-index: 10;
+}
+@media(max-width:1444px) {
+    .box_title_s_four{
+        height: 12rem;
+    }
+
+    .box_title_s_four p {
+        font-size: 1em;
+    }
+    
+    .box_title_s_four h1 {
+        font-size: 1.5em;
+    }
+    .box_content_s_four a{
+        width: 70%;
+        height: auto;
+    }
+    .box_content_s_four img{
+        width: 90%;
+        
+    } 
+    .img_size{
+        height: 80%;
+    }
+   
+    
+}
+
+@media(max-width:525px) {
+
+    .box_title_s_four p {
+        font-size: 1.1em;
+    }
+    
+    .box_title_s_four h1 {
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width:425px) {
+    .box_content_s_four img{
+        width: 80%;
+        height: auto;
+    } 
+    .img_size{
+        height: 90%;
+    }
+    .box_content_s_four{
+        width: 17rem;
+    } 
+    .box_title_s_four{
+        height: 12rem;
+    }
+    .box_content_s_four a{
+        width: 90%;
+        height: 100%;
+    }
+}

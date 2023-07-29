@@ -1,0 +1,140 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.header {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+
+
+.header_bottom {
+    width: 100%;
+    height: 5rem;
+
+    background-color: rgb(154, 144, 199);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10%;
+
+    position: fixed;
+    z-index: 100;
+    /* box-shadow: -7px 7px 4px 0px rgba(0, 0, 0, 0.25); */
+    top: 0;
+    
+
+}
+
+.box_img_header {
+ 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+
+}
+
+.box_img_header a {
+    width: 30%;
+  }
+  .box_img_header img {
+ 
+    width: 100%;
+  }
+
+#navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    transition: 0.3s;
+}
+
+.btn_icon_header {
+    display: none;
+}
+
+
+.button_header {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+    border-bottom: 1px solid transparent;
+    letter-spacing: 2px;
+
+    transition: 1s;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.button_header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #3005FA;
+     /* Transição para a propriedade width */
+  }
+  
+  /* Efeito de hover do underline (barra) */
+  .button_header:hover::after {
+    width: 100%;
+     /* Barra vai de 0 a 100 quando o mouse está sobre o botão */
+  }
+  
+  /* Efeito de hover reverso do underline (barra) */
+  .button_header:not(:hover)::after {
+    animation: underline-reverse 1.5s forwards; /* Barra vai de 100 a 0 quando o mouse é retirado */
+  }
+  
+  /* Animação reversa */
+  @keyframes underline-reverse {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  .scrolled .button_header::after {
+    background-color: white; /* Altera a cor do underline para branco */
+  }
+
+
+.btn_link_mobile {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px
+}
+
+@media(max-width:768px){
+    /* Estilo do hover do botão */
+.button_header::after {
+    /* Coloque aqui os estilos de hover que desejar */
+    color: #40A37F;
+    border-bottom: 1px solid #40A37F;
+    padding: 2% 0;
+    outline: none;
+    position: relative;
+  }
+}
+
+

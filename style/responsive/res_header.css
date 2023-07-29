@@ -1,0 +1,168 @@
+@media screen and (max-width:1444px) {
+    .header_top {
+
+        height: 2rem;
+    }
+
+
+    .header_bottom {
+        height: 4rem;
+    }
+
+
+    
+    .box_img_header a {
+        width: 9%;
+    }
+    
+
+    #navigation_header {
+        gap: 10rem;
+    }
+
+
+    .box_contact_header a {
+        font-size: 0.8em;
+    }
+    .box_img_header a {
+        width: 27%;
+    }
+}
+@media screen and (max-width:1310px) {
+
+   
+    .box_img_header a {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:1210px) {
+
+    #navigation_header {
+        gap: 8rem;
+    }
+    .box_img_header a {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    #navigation_header {
+        gap: 7rem;
+        width: auto;
+    }
+
+    .header_bottom {
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    .button_header {
+        font-size: 0.9em
+    }
+
+    .box_contact_header a {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .header_top {
+
+        display: none !important;
+    }
+
+    .box_img_header a {
+        width: 27%;
+    }
+
+    .header_bottom {
+        justify-content: space-between;
+        padding: 0 7%;
+        height: 4rem;
+        top: 0 !important;
+
+    }
+
+    .box_img_header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+
+
+    .btn_icon_header {
+        display: block;
+        background-color: transparent;
+        color: #3005FA;
+        border: none;
+    }
+
+    .btn_link_mobile {
+        display: flex;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+
+
+    #navigation_header {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        top: 0;
+        height: 100vh;
+        width: 70vw;
+        gap: 3rem;
+        padding-top: 2rem;
+        background-color: #3005FA;
+        animation-duration: 0.2s;
+        margin-left: -100vw;
+        z-index: 100;
+    }
+
+    .button_header {
+        height: 2rem;
+        border-bottom: 0px;
+        
+    }
+
+    .button_header:hover {
+        border-bottom: 0px solid transparent;
+        border-radius: 10px;
+
+    }
+
+    .btn_closed {
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .button_header {
+        font-size: 0.8em;
+    }
+    .box_img_header a {
+        width: 35%;
+    }
+
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -200vw;
+    }
+
+    top {
+        margin-left: -12vw;
+    }
+}

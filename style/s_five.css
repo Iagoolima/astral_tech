@@ -1,0 +1,123 @@
+
+#s_five {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+
+
+
+}
+
+.container_right_s_five {
+    width: 50%;
+    height: auto;
+    height: 90vh;
+    max-height: 45rem;
+    background-color: var(--two);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5%;
+}
+
+.container_right_s_five h1 {
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+
+.container_right_s_five p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.container_right_s_five a {
+    height: 4rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 20px;
+
+    color: var(--two);
+    text-decoration: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    animation: bounceAnimation 4s infinite;
+}
+
+@keyframes bounceAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container_left_s_five {
+    width: 50%;
+    height: auto;
+    background-image: url(../assets/image6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+@media (max-width:1444px) {
+    .container_right_s_five {
+        height: 100vh;
+        gap: 2rem;
+    }
+    .container_right_s_five h1 {
+        font-size: 2.8em;
+        letter-spacing: 4px;
+    }
+
+    .container_right_s_five p {
+
+        font-size: 1.1em;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .container_right_s_five {
+        height: auto;
+        width: 100%;
+        gap: 2rem;
+        padding: 4%;
+        justify-content: flex-start;
+        
+    }
+
+    .container_right_s_five p {
+        font-size: 1em;
+    }
+
+    .container_left_s_five{
+        display: none;
+    }
+}
+
+@media (max-width:525px) {
+    .container_right_s_five h1 {
+        font-size: 2.2em;
+    }
+    .container_right_s_five {
+        gap: 1.3rem;
+    }
+}
+
